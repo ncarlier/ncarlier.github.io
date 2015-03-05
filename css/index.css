@@ -1,0 +1,353 @@
+@import url(http://fonts.googleapis.com/css?family=Cinzel+Decorative:400,900);
+/* CSS reset */
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset,
+img {
+  border: 0;
+}
+input {
+  border: 1px solid #b0b0b0;
+  padding: 3px 5px 4px;
+  color: #979797;
+  width: 190px;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+ol,
+ul {
+  list-style: none;
+}
+caption,
+th {
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+q:before,
+q:after {
+  content: '';
+}
+abbr,
+acronym {
+  border: 0;
+}
+body {
+  background: #DADADA;
+  color: #222;
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', Arial, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1;
+  position: relative;
+  cursor: default;
+}
+body > section {
+  padding-top: 2em;
+  padding-bottom: 5em;
+}
+.github img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+  z-index: 999;
+}
+.fancy {
+  font-family: 'Cinzel Decorative', cursive;
+  line-height: 0.5;
+  text-align: center;
+}
+.fancy span {
+  display: inline-block;
+  position: relative;
+}
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  top: 0;
+  width: 350px;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+#header {
+  padding-top: 0;
+  color: #FFF;
+  overflow: hidden;
+  position: relative;
+}
+#header img.bg {
+  position: absolute;
+  bottom: -20px;
+  right: calc(50% - 960px);
+  z-index: -1;
+  min-width: 100%;
+}
+#header .id {
+  max-width: 35em;
+  margin: 0 auto;
+  padding: 4em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header .id > div {
+  padding-left: 1em;
+}
+#header .id h1 {
+  padding-bottom: 0.5em;
+  font-size: 3em;
+  color: white;
+  text-shadow: 3px 3px 0 #6baecb, -1px -1px 0 #6baecb, 1px -1px 0 #6baecb, -1px 1px 0 #6baecb, 1px 1px 0 #6baecb;
+}
+#header .id img {
+  border-radius: 75px;
+  border-width: 3px;
+  border-color: #FFF;
+  border-style: solid;
+  flex-shrink: 0;
+}
+#header .id p {
+  font-style: italic;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 #6baecb;
+}
+#about {
+  color: white;
+  background-color: #6baecb;
+}
+#about > * {
+  max-width: 50em;
+  margin: 0 auto;
+}
+#about header h1 {
+  font-size: 1.5em;
+  padding: 1em 0;
+}
+#about article ul.details {
+  display: flex;
+  text-align: center;
+  font-size: 1.2em;
+  padding-bottom: 2em;
+}
+#about article ul.details li {
+  flex: 1;
+}
+#skills {
+  color: white;
+  background-color: #699a24;
+}
+#skills > * {
+  max-width: 50em;
+  margin: 0 auto;
+}
+#skills header h1 {
+  font-size: 1.5em;
+  padding: 1em 0;
+}
+#skills article {
+  display: flex;
+  justify-content: space-between;
+}
+#skills article h2 {
+  font-variant: small-caps;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+#skills article li.l3:before,
+#skills article li.l2:before,
+#skills article li.l1:before {
+  font-family: FontAwesome;
+  margin-right: 0.5em;
+}
+#skills article li.l3:before {
+  content: "\f005\f005\f005";
+}
+#skills article li.l2:before {
+  content: "\f005\f005\f006";
+}
+#skills article li.l1:before {
+  content: "\f005\f006\f006";
+}
+#experiences {
+  color: white;
+  background-color: #444444;
+  padding-bottom: 4em;
+}
+#experiences > * {
+  max-width: 50em;
+  margin: 0 auto;
+}
+#experiences header h1 {
+  font-size: 1.5em;
+  padding: 1em 0;
+}
+#experiences article ul.tags li {
+  line-height: initial;
+  display: inline-block;
+  padding: 0 3px;
+  font-size: small;
+  background: #666;
+  color: #ccc;
+}
+#experiences article ul.experiences {
+  width: 100%;
+  position: relative;
+  text-align: left;
+  overflow: hidden;
+}
+#experiences article ul.experiences:before {
+  position: absolute;
+  width: 4px;
+  background: #626262;
+  top: 0px;
+  left: 50%;
+  margin-left: -2px;
+  content: '';
+  height: 100%;
+}
+#experiences article ul.experiences > li {
+  width: 100%;
+  clear: both;
+  float: left;
+  position: relative;
+  padding: 30px 0;
+}
+#experiences article ul.experiences > li > div {
+  float: left;
+  width: 48%;
+  height: 128px;
+  line-height: 128px;
+  position: relative;
+}
+#experiences article ul.experiences > li > div span {
+  background: rgba(160, 160, 160, 0.09);
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  padding: 1em;
+}
+#experiences article ul.experiences > li > div:first-child {
+  text-align: right;
+  float: left;
+  padding-right: 2%;
+}
+#experiences article ul.experiences > li > div:last-child {
+  padding-left: 2%;
+}
+#experiences article ul.experiences > li > h2 {
+  text-align: center;
+  letter-spacing: 0.5em;
+  padding-left: 0.5em;
+  font-size: 2em;
+}
+#experiences article ul.experiences > li a {
+  color: #9ECADD;
+  font-weight: bold;
+  text-decoration: none;
+}
+#experiences article ul.experiences > li a:hover {
+  text-decoration: underline;
+}
+#experiences article ul.experiences > li img {
+  border-radius: 70px;
+  border-width: 3px;
+  border-color: #626262;
+  border-style: solid;
+  max-width: 128px;
+  max-height: 128px;
+}
+#education {
+  color: white;
+  background-color: #ac7bc8;
+}
+#education > * {
+  max-width: 50em;
+  margin: 0 auto;
+}
+#education header h1 {
+  font-size: 1.5em;
+  padding: 1em 0;
+}
+#education article ul {
+  text-align: center;
+}
+#education article ul li {
+  padding-top: 2em;
+}
+#education article ul li i {
+  font-size: 2em;
+  color: rgba(255, 255, 255, 0.39);
+}
+#education article ul li h2 {
+  font-size: 1.2em;
+  font-style: italic;
+}
+#footer {
+  color: #ABABAB;
+  padding: 1em 0;
+}
+#footer > * {
+  max-width: 50em;
+  margin: 0 auto;
+}
