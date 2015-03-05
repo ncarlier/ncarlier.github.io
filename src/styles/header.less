@@ -1,0 +1,47 @@
+#header {
+  padding-top: 0;
+  color: #FFF;
+  overflow: hidden;
+  position: relative;
+  img.bg {
+    position: absolute;
+    bottom: -20px;
+    right: calc(~"50% - 960px");
+    z-index: -1;
+    min-width: 100%;
+  }
+  .id {
+    max-width: 35em;
+    margin: 0 auto;
+    padding: 4em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > div {
+      padding-left: 1em;
+    }
+    h1 {
+      padding-bottom: 0.5em;
+      font-size: 3em;
+      color: white;
+      text-shadow:
+        3px 3px 0 @blue,
+        -1px -1px 0 @blue,
+        1px -1px 0 @blue,
+        -1px 1px 0 @blue,
+        1px 1px 0 @blue;
+    }
+    img {
+      border-radius: 75px;
+      border-width: 3px;
+      border-color: #FFF;
+      border-style: solid;
+      flex-shrink: 0;
+    }
+    p {
+      font-style: italic;
+      font-weight: bold;
+      text-shadow: 1px 1px 0 @blue;
+    }
+  }
+}

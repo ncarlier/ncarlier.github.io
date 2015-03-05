@@ -1,0 +1,16 @@
+<header>
+<h1 class="fancy"><span>My skills</span></h1>
+</header>
+<article>
+  <% for (var cat in skills) { %>
+  <div>
+    <h2><%= cat %></h2>
+    <ul>
+      <% for (var skill in skills[cat]) { %>
+      <li class="l<%= skills[cat][skill] %>"><%= skill %></li>
+      <% } %>
+    </ul>
+  </div>
+  <% } %>
+</article>
+

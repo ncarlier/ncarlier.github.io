@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title><%= name %></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="<%= name %>'s resume." />
+    <meta name="author" content="Nicolas Carlier (https://ncarlier.github.io)">
+    <link rel="icon" type="image/png" href="http://www.gravatar.com/avatar/<%= gravatar %>.png">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <a href="https://github.com/ncarlier/ncarlier.github.io" class="github">
+      <img src="assets/images/fork_me.png" alt="Fork me on GitHub" >
+    </a>
+    <header id="header">
+      <% include sections/header.html %>
+    </header>
+    <section id="about">
+      <% include sections/about.html %>
+    </section>
+    <section id="skills">
+      <% include sections/skills.html %>
+    </section>
+    <section id="experiences">
+      <% include sections/experiences.html %>
+    </section>
+    <section id="education">
+      <% include sections/education.html %>
+    </section>
+    <footer id="footer">
+      <p>
+      Made with <i class="fa fa-heart-o"></i> by Nicolas Carlier - website powered by Github<br/>
+      <small>Copyright © 2014-2015 Nicolas Carlier</small>
+      <small>This work is free. You can redistribute it and/or modify it under the terms of the GPLv3 License. See the COPYING file for more details.<small>
+      </p>
+    </footer>
+    <script>
+var links = document.links;
+
+for (var i = 0, linksLength = links.length; i < linksLength; i++) {
+   if (links[i].hostname != window.location.hostname) {
+       links[i].target = '_blank';
+   }
+}
+    </script>
+  </body>
+</html>
