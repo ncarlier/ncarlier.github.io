@@ -2,25 +2,13 @@
 #
 # VERSION 0.0.1
 
-FROM ncarlier/nodejs
+FROM node:5-onbuild
 
-MAINTAINER Nicolas Carlier <https://ncarlier.github.io>
+MAINTAINER Nicolas Carlier <https://github.com/ncarlier>
 
-# Add files
-ADD . /opt/ncarlier.github.io
-WORKDIR /opt/ncarlier.github.io
-RUN chown node.node -R /opt/ncarlier.github.io
-
-# Def. user
-USER node
-ENV HOME /home/node
-
-# Install App
-RUN npm install
-
-# Main port
+# Ports
 EXPOSE 3000
 
-ENTRYPOINT ["/usr/bin/npm"]
+ENTRYPOINT ["/usr/local/bin/npm"]
 
 CMD ["start"]

@@ -1,18 +1,41 @@
 .SILENT :
-.PHONY : help volume mount build clean cleanup start shell
+.PHONY : help volume mount update build clean cleanup start debug shell test install
 
 USERNAME:=ncarlier
 APPNAME:=ncarlier.github.io
 IMAGE:=$(USERNAME)/$(APPNAME)
+env?=dev
 
-define docker_run_flags
---rm \
--e DOMAIN_NAME=ncarlier.github.io \
--P \
--it
-endef
+# Default links
+LINK_FLAGS?=
+# Default configuration
+ENV_FLAGS?=
 
-all: build cleanup
+# Default Docker run flags
+RUN_FLAGS?=-it --rm -h $(APPNAME) -p 3000:3000 $(LINK_FLAGS) $(ENV_FLAGS)
+# Default Docker run command
+RUN_CMD?=
+
+# Default Docker run flags for shell access
+SHELL_FLAGS?=-it --rm -h $(APPNAME) -p 3000:3000 --entrypoint="/bin/bash" $(LINK_FLAGS) $(ENV_FLAGS)
+# Default Docker run command for shell access
+SHELL_CMD?=-c /bin/bash
+
+# Volume flags
+VOLUME_FLAGS:=
+
+# Docker configuartion regarding the system architecture
+DOCKER=docker
+DOCKERFILE=Dockerfile
+BASEIMAGE_=node:5-onbuild
+BASEIMAGE=node:5-onbuild
+UNAME_M := $(shell uname -m)
+ifeq ($(UNAME_M),armv7l)
+	DOCKERFILE=Dockerfile.arm
+	BASEIMAGE=ncarlier/nodejs-arm
+endif
+
+all: help
 
 ## This help screen
 help:
@@ -27,38 +50,64 @@ help:
 	} \
 	{ lastLine = $$0 }' $(MAKEFILE_LIST)
 
+Dockerfile.arm:
+ifeq ($(UNAME_M),armv7l)
+	echo "Building $(APPNAME) ARM dockerfile..."
+	sed -e 's|$(BASEIMAGE_)|$(BASEIMAGE)|' Dockerfile > Dockerfile.arm
+endif
+
 ## Make the volume image
 volume:
 	echo "Building $(APPNAME) volumes..."
-	sudo docker run -v $(PWD):/opt/$(APPNAME) --name $(APPNAME)_volumes busybox true
+	$(DOCKER) run -v $(PWD):/usr/src/app --name $(APPNAME)_volumes busybox true
 
-## Enable DEVMODE (mount volumes)
+## Mount volumes
 mount:
-	$(eval docker_run_flags += --volumes-from $(APPNAME)_volumes)
-	echo "DEVMODE: Using volumes from $(APPNAME)_volumes"
+	$(eval VOLUME_FLAGS += --volumes-from $(APPNAME)_volumes)
+	echo "Using volumes from $(APPNAME)_volumes"
+
+## Update base image
+update:
+	echo "Updating base image..."
+	-$(DOCKER) pull $(BASEIMAGE)
 
 ## Build the image
-build:
+build: update Dockerfile.arm
 	echo "Building $(IMAGE) docker image..."
-	sudo docker build --rm -t $(IMAGE) .
+	$(DOCKER) build --rm -t $(IMAGE) -f $(DOCKERFILE) .
+	$(MAKE) cleanup
 
 ## Remove the image
-clean:
+clean: stop rm
 	echo "Removing $(IMAGE) docker image..."
-	-sudo docker rmi $(IMAGE)
+	-$(DOCKER) rmi $(IMAGE)
 
 ## Remove dangling images
 cleanup:
 	echo "Removing dangling docker images..."
-	-sudo docker images -q --filter 'dangling=true' | xargs sudo docker rmi
+	-$(DOCKER) images -q --filter 'dangling=true' | xargs $(DOCKER) rmi
 
 ## Start the container
 start:
 	echo "Starting $(IMAGE) docker image..."
-	sudo docker run $(docker_run_flags) --name $(APPNAME) $(IMAGE)
+	$(DOCKER) run $(RUN_FLAGS) $(VOLUME_FLAGS) $(IMAGE) $(RUN_CMD)
+	
+## Run the container in debug mode
+debug:
+	echo "Running $(IMAGE) docker image in DEBUG mode..."
+	$(DOCKER) run $(RUN_FLAGS) $(VOLUME_FLAGS) -p 3333:8080 $(IMAGE) run debug
 
-## Start the container with shell access
+## Run the container with shell access
 shell:
-	echo "Starting $(IMAGE) docker image with shell access..."
-	sudo docker run $(docker_run_flags) --entrypoint="/bin/bash" $(IMAGE) -c /bin/bash
+	echo "Running $(IMAGE) docker image with shell access..."
+	$(DOCKER) run $(SHELL_FLAGS) $(VOLUME_FLAGS) $(IMAGE) $(SHELL_CMD)
+
+## Run the container in test mode
+test:
+	echo "Running tests..."
+	$(DOCKER) run $(RUN_FLAGS) $(VOLUME_FLAGS) $(IMAGE) test
+
+## Install as a service (needs root privileges)
+install: build
+	echo "Install as a service... (TODO)"
 
