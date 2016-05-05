@@ -1,5 +1,6 @@
-@import url(http://fonts.googleapis.com/css?family=Cinzel+Decorative:400,900);
 /* CSS reset */
+@import url(http://fonts.googleapis.com/css?family=Cinzel+Decorative:400,900);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic,700italic,900italic);
 body,
 div,
 dl,
@@ -86,7 +87,9 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Lato', Arial, sans-serif;
-  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.7;
+  font-weight: 500;
   font-style: normal;
   line-height: 1;
   position: relative;
@@ -94,7 +97,7 @@ body {
 }
 body > section {
   padding-top: 2em;
-  padding-bottom: 5em;
+  padding-bottom: 4em;
 }
 .github img {
   position: absolute;
@@ -104,7 +107,6 @@ body > section {
   z-index: 999;
 }
 .fancy {
-  font-family: 'Cinzel Decorative', cursive;
   line-height: 0.5;
   text-align: center;
 }
@@ -133,6 +135,7 @@ body > section {
 #header {
   padding-top: 0;
   color: #FFF;
+  background-color: #24849A;
   overflow: hidden;
   position: relative;
 }
@@ -158,7 +161,7 @@ body > section {
   padding-bottom: 0.5em;
   font-size: 3em;
   color: white;
-  text-shadow: 3px 3px 0 #6baecb, -1px -1px 0 #6baecb, 1px -1px 0 #6baecb, -1px 1px 0 #6baecb, 1px 1px 0 #6baecb;
+  text-shadow: 3px 3px 0 #24849A, -1px -1px 0 #24849A, 1px -1px 0 #24849A, -1px 1px 0 #24849A, 1px 1px 0 #24849A;
 }
 #header .id img {
   border-radius: 75px;
@@ -170,11 +173,11 @@ body > section {
 #header .id p {
   font-style: italic;
   font-weight: bold;
-  text-shadow: 1px 1px 0 #6baecb;
+  text-shadow: 1px 1px 0 #24849A;
 }
 #about {
   color: white;
-  background-color: #6baecb;
+  background-color: #24849A;
 }
 #about > * {
   max-width: 50em;
@@ -190,12 +193,39 @@ body > section {
   font-size: 1.2em;
   padding-bottom: 2em;
 }
-#about article ul.details li {
+#about article ul.details > li {
   flex: 1;
+}
+#about article span.about p {
+  padding: 0.5em 0;
+}
+#about article span.about ul {
+  list-style: initial;
+  margin-left: 1em;
+}
+#about article ul.links {
+  display: flex;
+  text-align: center;
+  font-size: 4em;
+}
+#about article ul.links > li {
+  flex: 1;
+}
+#about article a {
+  color: #B2DAEC;
+  font-weight: bold;
+  text-decoration: none;
+}
+#about article a:hover {
+  text-decoration: underline;
+}
+#about article h3 {
+  padding: 2em;
+  text-align: center;
 }
 #skills {
   color: white;
-  background-color: #699a24;
+  background-color: #249A64;
 }
 #skills > * {
   max-width: 50em;
@@ -231,7 +261,7 @@ body > section {
 }
 #experiences {
   color: white;
-  background-color: #444444;
+  background-color: #444;
   padding-bottom: 4em;
 }
 #experiences > * {
@@ -302,7 +332,7 @@ body > section {
   font-size: 2em;
 }
 #experiences article ul.experiences > li a {
-  color: #9ECADD;
+  color: #909090;
   font-weight: bold;
   text-decoration: none;
 }
@@ -319,7 +349,7 @@ body > section {
 }
 #education {
   color: white;
-  background-color: #ac7bc8;
+  background-color: #AC7BC8;
 }
 #education > * {
   max-width: 50em;

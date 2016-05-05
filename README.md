@@ -4,8 +4,29 @@
 
 ## About me
 
-age: 36 years old | xp: undefined | company: Worldline | location: Tours, France
+age: 37 years old | xp: 13 years XP | company: Worldline | location: Tours, France
 
+I am working at [Worldline](//worldline.com/en-us/home.html) since 2002.
+Gradually developer, application manager, project manager, lead developer, I am currently a **Software Architect** and member of the corporate **Expert Team**.
+I am in charge of conception, implementation, quality and technical expertise on major projects.
+
+My work interests are numerous but mostly about:
+
+* **Web** in general but especially about technical aspects such as HTML5, CSS3, WebRTC, Web Component, Multi Device Web Interface.
+* **Big Data**, with a focus on scalability and real time. Experimentation around NoSQL technologies.
+* **Cloud** technologies. I am a adept of Devops principles, Infrastructure as Code, Continuous Deployment, and relative subjects.
+* **Internet of things**. As my day to day work, and also as my hobby, I love prototyping around many kind of connected device.
+
+During my freetime I continue to develop but for **Open Source** projects. I am the project owner of [Nunux Reader](//reader.nunux.org) and [Nunux Keeper](//keeper.nunux.org).
+
+### Find me on...
+
+
+- [GitHub](//github.com/ncarlier)
+
+- [Twitter](//twitter.com/ncarlier)
+
+- [Linkedin](//www.linkedin.com/profile/view?id=15575472)
 
 
 ## My skills
@@ -16,6 +37,7 @@ age: 36 years old | xp: undefined | company: Worldline | location: Tours, France
   + Javascript
   + NodeJS
   + AngularJS
+  + ReactJS
   + CSS3
   + Arduino
   + Go
@@ -34,6 +56,7 @@ age: 36 years old | xp: undefined | company: Worldline | location: Tours, France
   + PostgreSQL
   + Elasticsearch
   + Cassandra
+  + Couchbase
 
 
 - Languages
@@ -43,6 +66,20 @@ age: 36 years old | xp: undefined | company: Worldline | location: Tours, France
 
 
 ## Experiences
+
+
+
+
+### 2016
+
+
+- Software Architect of the [Connected Living](//fr.worldline.com/fr-fr/home/solutions/services-mobiles-et-transactionnels/connected-living.html) offer of Worldline
+  *IoT, BigData, Microservice*
+
+
+
+- Software Architect of the [R-link](//www.renault.fr/services/prolonger-garantie/extension-vn/systemes-multimedia/r-link/) service of Renault
+  *M2M, Java, Android, Angular*
 
 
 
