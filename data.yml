@@ -3,17 +3,42 @@ gravatar: c68bf5ad50bc2d3b9c85ef230fc6b0aa
 #profile_banner: "https://pbs.twimg.com/profile_banners/285497751/1418391879/1500x500"
 profile_banner: assets/images/bg.jpg
 description: Developer junkie, open source enthusiast, data nerd, command line addict... and also a regular man
-age: 36 years old
-xp: 13 years XP
+age: 37 years old
+year_of_xp: 13 years XP
 company: Worldline
 location: Tours, France
-about: ""
+about: |
+  I am working at [Worldline](//worldline.com/en-us/home.html) since 2002.
+  Gradually developer, application manager, project manager, lead developer, I am currently a **Software Architect** and member of the corporate **Expert Team**.
+  I am in charge of conception, implementation, quality and technical expertise on major projects.
+
+  My work interests are numerous but mostly about:
+
+  * **Web** in general but especially about technical aspects such as HTML5, CSS3, WebRTC, Web Component, Multi Device Web Interface.
+  * **Big Data**, with a focus on scalability and real time. Experimentation around NoSQL technologies.
+  * **Cloud** technologies. I am a adept of Devops principles, Infrastructure as Code, Continuous Deployment, and relative subjects.
+  * **Internet of things**. As my day to day work, and also as my hobby, I love prototyping around many kind of connected device.
+
+  During my freetime I continue to develop but for **Open Source** projects. I am the project owner of [Nunux Reader](//reader.nunux.org) and [Nunux Keeper](//keeper.nunux.org).
+
+  ### Find me on...
+links:
+  - label: GitHub
+    url: //github.com/ncarlier
+    icon: github
+  - label: Twitter
+    url: //twitter.com/ncarlier
+    icon: twitter
+  - label: Linkedin
+    url: //www.linkedin.com/profile/view?id=15575472
+    icon: linkedin
 skills:
   Developpment:
     Java: 3
     Javascript: 3
     NodeJS: 3
     AngularJS: 3
+    ReactJS: 3
     CSS3: 3
     Arduino: 2
     Go: 1
@@ -28,6 +53,7 @@ skills:
     PostgreSQL: 3
     Elasticsearch: 2
     Cassandra: 2
+    Couchbase: 1
   Languages:
     French: 3
     English: 2
@@ -45,6 +71,21 @@ education:
     location: "Université François Rabelais de Tours"
     years: "1997 - 1998"
 experiences:
+  2016:
+    -
+      desc: >
+        Software Architect of the [Connected Living](//fr.worldline.com/fr-fr/home/solutions/services-mobiles-et-transactionnels/connected-living.html)
+        offer of Worldline
+      tags: [IoT, BigData, Microservice]
+      img: "assets/images/connected_living.png"
+      company: Worldline
+    -
+      desc: >
+        Software Architect of the [R-link](//www.renault.fr/services/prolonger-garantie/extension-vn/systemes-multimedia/r-link/)
+        service of Renault
+      tags: [M2M, Java, Android, Angular]
+      img: "assets/images/rlink.png"
+      company: Worldline
   2015:
     -
       desc: >

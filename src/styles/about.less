@@ -17,9 +17,38 @@
       text-align: center;
       font-size: 1.2em;
       padding-bottom: 2em;
-      li {
+      > li {
         flex: 1;
       }
+    }
+    span.about {
+      p {
+        padding: 0.5em 0;
+      }
+      ul {
+        list-style: initial;
+        margin-left: 1em;
+      }
+    }
+    ul.links {
+      display: flex;
+      text-align: center;
+      font-size: 4em;
+      > li {
+        flex: 1;
+      }
+    }
+    a {
+      color: #B2DAEC;
+      font-weight: bold;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    h3 {
+      padding: 2em;
+      text-align: center;
     }
   }
 }

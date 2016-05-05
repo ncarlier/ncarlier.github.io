@@ -4,9 +4,12 @@
 
 ## About me
 
-age: <%= age %> | xp: <%= xp %> | company: <%= company %> | location: <%= location %>
+age: <%= age %> | xp: <%= year_of_xp %> | company: <%= company %> | location: <%= location %>
 
 <%= about %>
+<% for(var index in links) { %><% var link = links[index]; %>
+- [<%= link.label %>](<%= link.url %>)
+<% } %>
 
 ## My skills
 
