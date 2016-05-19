@@ -3,6 +3,7 @@ var gulp        = require('gulp'),
     ejs         = require('gulp-ejs'),
     yaml        = require('js-yaml'),
     markdown    = require('markdown'),
+    exec        = require('child_process').exec,
     merge       = require('merge-stream'),
     browserSync = require('browser-sync'),
     deploy      = require('gulp-gh-pages'),
@@ -26,6 +27,14 @@ gulp.task('templates', ['clean'], function () {
   .pipe(gulp.dest('dist/'));
   return merge(readme, index);
 })
+
+gulp.task('doc', ['build'], function(cb) {
+  exec('pandoc dist/README.md -o dist/resume.docx', function (err, stdout, stderr) {
+    console.log(stdout);
+    console.log(stderr);
+    cb(err);
+  });
+});
 
 gulp.task('assets', ['clean'], function() {
   return gulp.src('src/assets/**').pipe(gulp.dest('dist/assets'));
