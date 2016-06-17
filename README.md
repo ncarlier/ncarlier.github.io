@@ -6,16 +6,17 @@
 
 age: 37 years old | xp: 13 years XP | company: Worldline | location: Tours, France
 
-I am working at [Worldline](//worldline.com/en-us/home.html) since 2002.
-Gradually developer, application manager, project manager, lead developer, I am currently a **Software Architect** and member of the corporate **Expert Team**.
-I am in charge of conception, implementation, quality and technical expertise on major projects.
+I have worked at [Worldline](//worldline.com/en-us/home.html) since 2002.
+I was initialy recruited as a developer. My roles have included application manager, project manager, lead developer.
+I am currently a **Software Architect** and I am member of the corporate **Expert Team**.
+I am in charge of the full life cycle from conception, implementation, to providing quality and technical expertise on major projects.
 
 My work interests are numerous but mostly about:
 
 * **Web** in general but especially about technical aspects such as HTML5, CSS3, WebRTC, Web Component, Multi Device Web Interface.
-* **Big Data**, with a focus on scalability and real time. Experimentation around NoSQL technologies.
-* **Cloud** technologies. I am a adept of Devops principles, Infrastructure as Code, Continuous Deployment, and relative subjects.
-* **Internet of things**. As my day to day work, and also as my hobby, I love prototyping around many kind of connected device.
+* **Big Data**, with a focus on scalability and real time. Experimentation on NoSQL technologies.
+* **Cloud** technologies. I am adept at Devops principles, Infrastructure as Code, Continuous Deployment, and relative subjects.
+* **Internet of things**. As part of my day to day work, and also as my hobby, I love prototyping around many kinds of connected devices.
 
 During my freetime I continue to develop but for **Open Source** projects. I am the project owner of [Nunux Reader](//reader.nunux.org) and [Nunux Keeper](//keeper.nunux.org).
 
@@ -32,7 +33,7 @@ During my freetime I continue to develop but for **Open Source** projects. I am 
 ## My skills
 
 
-- Developpment
+- Development
   + Java
   + Javascript
   + NodeJS
@@ -73,12 +74,12 @@ During my freetime I continue to develop but for **Open Source** projects. I am 
 ### 2016
 
 
-- Software Architect of the [Connected Living](//fr.worldline.com/fr-fr/home/solutions/services-mobiles-et-transactionnels/connected-living.html) offer of Worldline
+- Software Architect of [Connected Living](//fr.worldline.com/fr-fr/home/solutions/services-mobiles-et-transactionnels/connected-living.html) for Worldline
   *IoT, BigData, Microservice*
 
 
 
-- Software Architect of the [R-link](//www.renault.fr/services/prolonger-garantie/extension-vn/systemes-multimedia/r-link/) service of Renault
+- Software Architect on [R-link](//www.renault.fr/services/prolonger-garantie/extension-vn/systemes-multimedia/r-link/) for Renault
   *M2M, Java, Android, Angular*
 
 
@@ -92,7 +93,7 @@ During my freetime I continue to develop but for **Open Source** projects. I am 
 
 
 
-- Software Architect of the overhaul of the Thalys [loyalty website](//www.thalysthecard.com)
+- Software Architect on the overhaul of the Thalys [loyalty website](//www.thalysthecard.com)
   *Drupal, PHP*
 
 
@@ -101,17 +102,17 @@ During my freetime I continue to develop but for **Open Source** projects. I am 
 ### 2014
 
 
-- Software Architect of the remotely reloading system of Keolis Rennes transportation cards.
+- Software Architect on the remotely reloading system for Keolis Rennes transportation cards.
   *SpringMVC, NFC*
 
 
 
-- Development of an augmented reality GPS app during Worldline labs workshops
+- Development of an augmented reality GPS app with Worldline labs workshops
   *iPhone, Phonegap, BacboneJS, PostGIS, GeoServer*
 
 
 
-- Global Software Architect of the [Universal Tolling Sollution](//vimeo.com/96174615) of Atos Worldine and Siemens
+- Global Software Architect for the [Universal Tolling Sollution](//vimeo.com/96174615) for Atos Worldine and Siemens
   *Cassandra, Hazelcast, PostGIS, RabbitMQ, Spring MVC, BackboneJS, ...*
 
 
@@ -120,17 +121,17 @@ During my freetime I continue to develop but for **Open Source** projects. I am 
 ### 2013
 
 
-- Software Architect of the parking meters management system of Paris
+- Software Architect on the Paris parking meters management system
   *Spring MVC, PostgreSQL, ActiveMQ, BackboneJS*
 
 
 
-- Software Architect of the CMMS solution of Atos Worldine
+- Software Architect on CMMS solution for Atos Worldine
   *Spring MVC, PostgreSQL, ActiveMQ, BackboneJS*
 
 
 
-- Global Software Architect of the PCI-DSS project for the payment card system of the SNCF
+- Global Software Architect for the SNCF payment card system
   *PCI-DSS, BigData, Cryptography, Spring Batch*
 
 
@@ -144,12 +145,12 @@ During my freetime I continue to develop but for **Open Source** projects. I am 
 ### 2012
 
 
-- Development contributor of the Atos Worldline nextgen software forge
+- Development contributor for the Atos Worldline nextgen software forge
   *HTML5, CSS3, Javascript, Maven, Nexus, Hudson, JIRA, Spring, RESTHub*
 
 
 
-- Project leader of the application management of the [musée du Louvre](//www.louvre.fr) websites
+- Project leader for the [musée du Louvre](//www.louvre.fr) websites
   *J2EE, PHP, Oracle*
 
 
@@ -158,7 +159,7 @@ During my freetime I continue to develop but for **Open Source** projects. I am 
 ### 2011
 
 
-- Project leader and Software architect of the [Application de Recensement des Certificats des Equipements Numériques](//www.cnc-arcene.fr) for the CNC
+- Project leader and Software architect on the [Application de Recensement des Certificats des Equipements Numériques](//www.cnc-arcene.fr) for CNC
   *X509, Tapestry, Spring*
 
 
@@ -177,12 +178,12 @@ During my freetime I continue to develop but for **Open Source** projects. I am 
 
 
 
-- Lead developer of the [loyalty program system](//www.thalysthecard.com) of Thalys
+- Lead developer of the [loyalty program system](//www.thalysthecard.com) for Thalys
   *Tomcat, Tapestry, Lutece, Spring*
 
 
 
-- Development of an Bookmark sharing system during labs workshops
+- Development of a Bookmark sharing system during labs workshops
   *JPA, DWR, ArchetypeJS, PrototypeJS*
 
 
@@ -191,12 +192,12 @@ During my freetime I continue to develop but for **Open Source** projects. I am 
 ### 2009
 
 
-- Lead developer of the [fines payment system](//www.contraventions-sncf.fr) of the SNCF
+- Lead developer of the [fines payment system](//www.contraventions-sncf.fr) for SNCF
   *Tapestry, Spring*
 
 
 
-- Project leader deputy and lead developer of the [bike rental system](//www.agglo-veloplus.fr) of Orléans, Lille and Bordeaux.
+- Lead developer and Deputy Project Leader for the [bike rental system](//www.agglo-veloplus.fr) at Orléans, Lille and Bordeaux.
   *J2EE, JBoss, Jpos, Sybase*
 
 
@@ -205,7 +206,7 @@ During my freetime I continue to develop but for **Open Source** projects. I am 
 ### 2008
 
 
-- Lead developer of the healt care card management system of the GIP-CPS
+- Lead developer of the health care card management system for GIP-CPS
   *J2EE, JBoss, Struts, Hibernate*
 
 
@@ -214,7 +215,7 @@ During my freetime I continue to develop but for **Open Source** projects. I am 
 ### 2007
 
 
-- Lead developer of the legal archiving system of the GIP-CPS
+- Lead developer of the legal archiving system for GIP-CPS
   *Java, XML Signature*
 
 
@@ -223,7 +224,7 @@ During my freetime I continue to develop but for **Open Source** projects. I am 
 ### 2006
 
 
-- Developer of the checks payment management system of the SNCF
+- Developer of the checks payment management system for SNCF
   *J2EE, Sybase*
 
 
@@ -232,12 +233,12 @@ During my freetime I continue to develop but for **Open Source** projects. I am 
 ### 2005
 
 
-- Application manager of the healt care card managment system of the GIP-CPS
+- Application manager of the healt care card managment system for GIP-CPS
   *C, ProC, PowerBuilder, Oracle*
 
 
 
-- Developer of the card payment system of the SNCF
+- Developer of the card payment system for SNCF
   *Java, Sybase*
 
 
